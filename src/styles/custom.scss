@@ -1,0 +1,16 @@
+@import "./settings.scss";
+
+/* make the customizations */
+$theme-colors: (
+    "info": $blue,
+    "danger": $green
+);
+
+.bg-custom-nav {
+  background-color: $darker;
+}
+
+
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
