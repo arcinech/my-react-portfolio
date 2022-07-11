@@ -1,1 +1,36 @@
-@import "./settings.scss";
+@import "../../../styles/settings.scss";
+
+.root {
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+
+  .name {
+    color: $ligth;
+  }
+
+  .info {
+    position: relative;
+    min-width: 300px;  
+    
+    
+  }
+
+  .buttons {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    display:inline-flex;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+  }
+
+  &:hover .buttons {
+        visibility: visible;
+      }
+
+}
