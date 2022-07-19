@@ -5,4 +5,12 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: $main;
+  color: $darker;
+}
+
+section>*, footer{
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: $support;
 }
