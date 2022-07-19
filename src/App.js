@@ -7,6 +7,7 @@ import Header from './components/views/Header/Header';
 import Home from "./components/pages/Home/Home";
 import Projects from './components/pages/Projects/Projects';
 import NotFound from './components/pages/NotFound/NotFound';
+import Footer from './components/views/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects/> } />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Container>
     </>
   );
