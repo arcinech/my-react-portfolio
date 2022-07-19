@@ -1,3 +1,42 @@
-.icons {
-  font-size: 72px;
+@import "../../../styles/settings.scss";
+
+.root {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: $support;
+  transition: all 3s easy-in-out;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    >div {
+      margin: 5px;
+    }
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid $pumpkin;
+
+    
+    img {
+      transition: filter 1s;
+      border: inherit;
+      border-radius: inherit;
+      width: 100%;
+      object-fit:cover;
+      max-height: 100%;
+      filter: grayscale(100%);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &:hover img{
+    filter: grayscale(0%);
+  };
 }

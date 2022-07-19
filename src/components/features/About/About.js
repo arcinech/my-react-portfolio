@@ -1,29 +1,33 @@
 import Button from 'react-bootstrap/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faReact, faHtml5, faJsSquare, faCss3, faNodeJs} from '@fortawesome/free-brands-svg-icons';
 import styles from './About.module.scss';
-const About = () => {
 
+const About = () => {
+  const linkURL = 'https://images.pexels.com/photos/11769686/pexels-photo-11769686.jpeg?cs=srgb&dl=pexels-yuliia-tretynychenko-11769686.jpg&fm=jpg&w=640&h=960'
   return (
-    <div>
+    <div className={styles.root}>
       <h3>About me</h3>
-      <div>
-        <div>Content</div>
+      <div className={styles.content}>
+        <div className={styles.image}>
+          <img src={linkURL} alt ='me' />
+        </div>
+        <div>
+          <h4>Hi, I'm Marcin Lech</h4>
+          <p>I'm mostly frontend developer with skills centered around REACT library.</p>
+          <p>I started my journey with more serious programing from FullStack bootcamp.</p>
+          <p>I'm currently working on my own projects and I'm looking for new challenges.</p>
+          <p>I know my way around using expressJS library for backend with MongoDB connection</p> 
+        </div>
         <ul>
           <li>HTML</li>
           <li>JavaScript</li>
-          <li><FontAwesomeIcon icon={faReact} /> React Framework</li>
+          <li>React Library</li>
           <li>Redux with React</li>
+          <li>ExpresJS</li>
+          <li>MongoDb</li>
         </ul>
-        <Button variant="danger" href="https://github.com/arcinech">My github</Button>
-      </div>
-      <div>My technology stack</div>
-      <div className={styles.icons}>
-      <FontAwesomeIcon icon={faHtml5} title="HTML5" />
-      <FontAwesomeIcon icon={faCss3} title="CSS3"/>
-      <FontAwesomeIcon icon={faJsSquare} title="JavaScript"/>
-      <FontAwesomeIcon icon={faReact} title="React"/>
-      <FontAwesomeIcon icon={faNodeJs} title="NodeJS"/>
+        <div>
+          <Button variant="info" href="https://github.com/arcinech" target="_blanc">My github</Button>
+        </div>
       </div>
     </div>
   )
